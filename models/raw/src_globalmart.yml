@@ -6,6 +6,12 @@ sources:
     tables:
       - name: customer
       - name: orders
+        columns:
+          - name: orderid
+            tests:
+              - not_null
+              - unique
+                  
       - name: product
 
 
